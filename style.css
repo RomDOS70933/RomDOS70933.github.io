@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Rye&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'DM Serif Display', serif;
+    cursor: default; 
+}
+
+header {
+    height: 50px;
+}
+
+hr {
+    width: 75%;
+    border: 0;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+a {
+    color: none;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer; 
+}
+
+.global-article {
+    /*
+    background-color: brown;
+    */
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: x-large;
+    position: relative;
+}
+
+.list-articles{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+.ticket-article {    
+    background-color: orange;
+    color: white;
+    width: 120px;
+    height: 120px;
+    font-size: 15px;
+    text-align: center;
+}
+*/
+.ticket-article {   
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+p.icon {
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+p.icon:hover {
+    cursor: pointer;
+}
+
+.text-article {
+    margin-top: -15px;
+}
+
+#intro-section {
+    font-size: xx-large;
+
+}
+
+/*
+.section-text {
+    background-color: chartreuse;
+}
+
+.section-intro{ 
+    background-color: chocolate;
+}
+
+.section-subject {
+    background-color: darkcyan;
+}
+*/
+
+#french:hover {
+    background: linear-gradient(to right, #00239573 calc(100% / 3), rgba(255, 255, 255, 0.466) calc(100% / 3), rgba(255, 255, 255, 0.479) calc(100% / 3 * 2), #ed29397a calc(100% / 3 * 2));
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#english:hover {
+    background: linear-gradient(to right, transparent 30%, #ff000083 30%, #fe000086 45%, transparent 0), linear-gradient(to bottom, transparent 38%, #fe000083 38%, #fe000083 59%, transparent 0), #ffffff80;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#spanish:hover {
+    background: linear-gradient(rgba(255, 0, 0, 0.473) 25%, rgba(255, 255, 0, 0.466) 25%, rgba(255, 255, 0, 0.466) 75%,  rgba(255, 0, 0, 0.459) 75%);
+    border-radius: 10px;
+    cursor: pointer; 
+}
+
+#themes-articles {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#ticket-techno {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(85, 91, 255, 0.5);
+    color: rgba(85, 91, 255, 1);
+    font-size: 15px;
+}
+
+#ticket-techno:hover {
+    box-shadow: none;
+    background-image: linear-gradient(rgba(85, 91, 255, 0), rgba(85, 91, 255, 1));
+    color: whitesmoke;
+}
+
+#ticket-travel {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 216, 19, 0.5);
+    color: rgba(255, 216, 19, 1);
+    font-size: 20px;
+}
+
+#ticket-travel:hover {
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 216, 19, 0), rgba(255, 216, 19, 1));
+    color: whitesmoke;
+}
+
+#ticket-cook {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 85, 85, 0.5);
+    color: rgba(255, 85, 85, 1);
+    font-size: 20px;
+}
+
+#ticket-cook:hover {
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 85, 85, 0), rgba(255, 85, 85, 1));
+    color: whitesmoke;
+}
+
+#ticket-agriculture {
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(30, 193, 27, 0.5);
+    color: rgba(30, 193, 27, 1);
+    font-size: 19px;
+}
+
+#ticket-agriculture:hover {
+    box-shadow: none;
+    background-image: linear-gradient(rgba(30, 193, 27, 0), rgba(30, 193, 27, 1));
+    color: whitesmoke;
+}
+
+#ticket-more{
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 156, 85, 0.5);
+    color: rgba(255, 156, 85, 1);
+}
+
+#ticket-more:hover {
+    box-shadow: none;
+    background-image: linear-gradient(rgba(255, 156, 85, 0), rgba(255, 156, 85, 1));
+    color: whitesmoke;
+}
+
+#text-article-techno {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#text-article-travel {
+    font-family: 'Special Elite', cursive;
+}
+
+#text-article-cook {
+    font-family: 'Abril Fatface', cursive;
+}
+
+#text-article-agriculture {
+    font-family: 'Rye', cursive;
+}
