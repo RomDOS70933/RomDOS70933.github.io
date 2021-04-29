@@ -12,17 +12,36 @@
 </head>
 
 <body>
-    
-    <header class="header">
+    <header>
+        <div class="header"></div>
     </header>
+
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="articles_themes/all.html"><li>Articles</li></a>
+          <a href="fiction_themes/all.html"><li>Fictions</li></a>
+          <a href="drawings_themes/all.html"><li>Dessins</li></a>
+          <a href="about.html"><li>À propos</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+
     <article class="global-article">
         <section class="section-text" id="intro-section">
             <p><strong>Bonjour</strong>,</p>
         </section>
+        
         <section class="section-intro">
             <p>Je suis Romain, ingénieur français aux nombreux centres d'intérêt.</p>
         </section>
+        
         <section class="section-language"><p><span id="language">Je parle </span> <span id="french">le français</span>, <span id="english">l'anglais</span>, <span id="spanish">l'espagnol</span>.</p></section>
+        
         <section>
             <p>Ce site répertorie des fictions, créations, articles ou travaux sur des sujets aussi variés que: </p>
             <div class="list-articles" id="themes-articles">
@@ -42,30 +61,31 @@
                     <a href="articles_themes/cook.html">
                         <p class="icon">🍇</p>
                     </a>
-                    <p class="text-article" id="text-article-cook"> Cuisine</p>
+                    <p class="text-article" id="text-article-cook">Cuisine</p>
                 </div>
-                <div class="ticket-article" id="ticket-agriculture">
-                    <a href="articles_themes/agriculture.html">
-                        <p class="icon">🐝</p>
+                <div class="ticket-article" id="ticket-culture">
+                    <a href="articles_themes/culture.html">
+                        <p class="icon">📚</p>
                     </a>
-                    <p class="text-article" id="text-article-agriculture"> Agriculture</p>
+                    <p class="text-article" id="text-article-culture">Culture</p>
                 </div>
                 <div class="ticket-article" id="ticket-more">
-                    <a href="articles_themes/agriculture.html">
-                        <p class="icon">❓</p>
+                    <a href="articles_themes/all.html">
+                        <p class="icon">☝</p>
                     </a>
                     <p class="text-article" id="text-article-more">...</p>
                 </div>
             </div>
         </section>
         <hr>
+
         <section>
             <p>Dernier article à la une: </p>
             <div class="last-article" id="ticket-last-article">
-                
             </div>
         </section>
         <hr>
+
         <section>
             <p>Pour découvrir mes fictions: </p>
         </section>
@@ -75,8 +95,10 @@
         </section>
     </article>
 
-    <script src="index.js"></script>
+    <footer>
+    </footer>
 
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

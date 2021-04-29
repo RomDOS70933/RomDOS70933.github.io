@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Rye&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*
+GENERAL STYLE
+*/
 
 * {
     box-sizing: border-box;
@@ -10,8 +14,14 @@
     cursor: default; 
 }
 
-header {
-    height: 50px;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 80px;
+    background: linear-gradient(90deg, rgba(85,91,255,0.5) 20%, rgba(133, 126, 92, 0.5) 40%, rgba(255, 85, 85, 0.5) 60%, rgba(30, 193, 27, 0.5) 80%, rgba(255, 156, 85, 0.5) 100%);
 }
 
 hr {
@@ -24,6 +34,15 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+body {
+    background-color: whitesmoke;
+    color: rgba(27, 32, 33, 1);
+}
+
+/*
+LINKS STYLE
+*/
+
 a {
     color: none;
     text-decoration: none;
@@ -33,12 +52,27 @@ a:hover {
     cursor: pointer; 
 }
 
+/*
+CLASSES STYLE
+*/
+
+/*
+header
+*/
+.header {
+    height: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(85,91,255,0.3) 20%, rgba(255,216,19,0.3) 40%, rgba(255, 85, 85, 0.3) 60%, rgba(30, 193, 27, 0.3) 80%, rgba(255, 156, 85, 0.3) 100%);
+}
+
+/*
+main section
+*/
 .global-article {
-    /*
-    background-color: brown;
-    */
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     font-size: x-large;
     position: relative;
 }
@@ -48,16 +82,6 @@ a:hover {
     justify-content: space-between;
 }
 
-/*
-.ticket-article {    
-    background-color: orange;
-    color: white;
-    width: 120px;
-    height: 120px;
-    font-size: 15px;
-    text-align: center;
-}
-*/
 .ticket-article {   
     width: 120px;
     height: 120px;
@@ -77,24 +101,14 @@ p.icon:hover {
     margin-top: -15px;
 }
 
+/*
+IDs STYLE
+*/
+
 #intro-section {
     font-size: xx-large;
 
 }
-
-/*
-.section-text {
-    background-color: chartreuse;
-}
-
-.section-intro{ 
-    background-color: chocolate;
-}
-
-.section-subject {
-    background-color: darkcyan;
-}
-*/
 
 #french:hover {
     background: linear-gradient(to right, #00239573 calc(100% / 3), rgba(255, 255, 255, 0.466) calc(100% / 3), rgba(255, 255, 255, 0.479) calc(100% / 3 * 2), #ed29397a calc(100% / 3 * 2));
@@ -119,6 +133,10 @@ p.icon:hover {
     margin-bottom: 75px;
 }
 
+/*
+ARTILCE THEMES STYLE
+*/
+
 #ticket-techno {
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(85, 91, 255, 0.5);
@@ -128,7 +146,7 @@ p.icon:hover {
 
 #ticket-techno:hover {
     box-shadow: none;
-    background-image: linear-gradient(rgba(85, 91, 255, 0), rgba(85, 91, 255, 1));
+    background-image: linear-gradient(rgba(255, 216, 19, 0.5) 30%, rgba(85, 91, 255, 1) 100%);
     color: whitesmoke;
 }
 
@@ -141,7 +159,7 @@ p.icon:hover {
 
 #ticket-travel:hover {
     box-shadow: none;
-    background-image: linear-gradient(rgba(255, 216, 19, 0), rgba(255, 216, 19, 1));
+    background-image: linear-gradient(rgba(255, 85, 85, 0.5) 30%, rgba(255, 216, 19, 1) 100%);
     color: whitesmoke;
 }
 
@@ -154,20 +172,20 @@ p.icon:hover {
 
 #ticket-cook:hover {
     box-shadow: none;
-    background-image: linear-gradient(rgba(255, 85, 85, 0), rgba(255, 85, 85, 1));
+    background-image: linear-gradient(rgba(30, 193, 27, 0.5) 30%, rgba(255, 85, 85, 1) 100%);
     color: whitesmoke;
 }
 
-#ticket-agriculture {
+#ticket-culture {
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(30, 193, 27, 0.5);
     color: rgba(30, 193, 27, 1);
     font-size: 19px;
 }
 
-#ticket-agriculture:hover {
+#ticket-culture:hover {
     box-shadow: none;
-    background-image: linear-gradient(rgba(30, 193, 27, 0), rgba(30, 193, 27, 1));
+    background-image: linear-gradient(rgba(255, 156, 85, 0.5) 30%, rgba(30, 193, 27, 1) 100%);
     color: whitesmoke;
 }
 
@@ -179,7 +197,7 @@ p.icon:hover {
 
 #ticket-more:hover {
     box-shadow: none;
-    background-image: linear-gradient(rgba(255, 156, 85, 0), rgba(255, 156, 85, 1));
+    background-image: linear-gradient(rgba(255, 156, 85, 0) 30%, rgba(255, 156, 85, 1) 100%);
     color: whitesmoke;
 }
 
@@ -195,6 +213,164 @@ p.icon:hover {
     font-family: 'Abril Fatface', cursive;
 }
 
-#text-article-agriculture {
-    font-family: 'Rye', cursive;
+#text-article-culture {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+STYLE FOR THE MENU
+*/
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: rgba(27, 32, 33, 1);
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgba(27, 32, 33, 0.7);
+  cursor: pointer;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: rgba(27, 32, 33, 1);
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgba(27, 32, 33, 1)
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -200px;
+  font-style: italic;
+  
+  background: rgba(27, 32, 33, 0);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 7px 0;
+  font-size: 17px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    transform: none;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
 }
