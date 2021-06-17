@@ -13,7 +13,7 @@ var list_of_articles = {
         "author": "RomDos",
         "theme": "culture"
     },
-    "Le pain": {
+    "Fermentation 1: Le pain, recette simple": {
         "description": "Recette et explications sur les mécanismes qui interviennent dans la préparation du pain",
         "link": "../articles/cook/bread.html",
         "date": "2021/04/02",
