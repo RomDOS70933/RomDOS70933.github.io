@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 /*
 GENERAL STYLE
 */
@@ -81,11 +76,15 @@ main section
     margin-right: 150px;
     font-size: x-large;
     position: relative;
+
 }
 
-.list-articles{
-    display: flex;
-    justify-content: space-between;
+.list-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .ticket-article {   
@@ -107,29 +106,72 @@ p.icon:hover {
     margin-top: -15px;
 }
 
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 20px;
+    }
+    footer{
+        height: 60px;
+        margin-top: 40px;
+    }
+    .global-article {
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: large;
+    }
+    .list-articles{
+        font-size: large;
+    }
+    .ticket-article{
+        width: 100px;
+        height: 100px;
+    }
+    .text-article {
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        height: 10px;
+    }
+    footer{
+        height: 40px;
+        margin-top: 30px;
+    }
+    .global-article {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: medium;
+    }
+    .list-articles{
+        font-size: small;
+    }
+    .ticket-article{
+        width: 75px;
+        height: 75px;
+    }
+    .text-article {
+        margin-top: -40px;
+    }
+}
+
 /*
 drawings
 */
 .wrappers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.im-one {
-    grid-column: 1;
-    grid-row: 1;
+
+.im {
+    max-width: 600px;
+    max-height: 800px;
 }
-.im-two {
-    grid-column: 2;
-    grid-row: 1;
-}
-.im-three {
-    grid-column: 3;
-    grid-row: 1;
-}
+
 /*
 IDs STYLE
 */
@@ -170,7 +212,6 @@ ARTILCE THEMES STYLE
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(85, 91, 255, 0.5);
     color: rgba(85, 91, 255, 1);
-    font-size: 15px;
 }
 
 #ticket-techno:hover {
@@ -183,7 +224,6 @@ ARTILCE THEMES STYLE
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(255, 216, 19, 0.5);
     color: rgba(255, 216, 19, 1);
-    font-size: 20px;
 }
 
 #ticket-travel:hover {
@@ -196,7 +236,6 @@ ARTILCE THEMES STYLE
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(255, 85, 85, 0.5);
     color: rgba(255, 85, 85, 1);
-    font-size: 20px;
 }
 
 #ticket-cook:hover {
@@ -209,7 +248,6 @@ ARTILCE THEMES STYLE
     border-radius: 15px;
     box-shadow: 0 0 10px 5px rgba(30, 193, 27, 0.5);
     color: rgba(30, 193, 27, 1);
-    font-size: 19px;
 }
 
 #ticket-culture:hover {
@@ -228,22 +266,6 @@ ARTILCE THEMES STYLE
     box-shadow: none;
     background-image: linear-gradient(rgba(255, 156, 85, 0) 30%, rgba(255, 156, 85, 1) 100%);
     color: whitesmoke;
-}
-
-#text-article-techno {
-    font-family: 'Press Start 2P', cursive;
-}
-
-#text-article-travel {
-    font-family: 'Special Elite', cursive;
-}
-
-#text-article-cook {
-    font-family: 'Abril Fatface', cursive;
-}
-
-#text-article-culture {
-    font-family: 'Ubuntu', sans-serif;
 }
 
 /*
