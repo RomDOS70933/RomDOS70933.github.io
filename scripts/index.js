@@ -29,9 +29,8 @@ es.addEventListener('click', function() {
 
 
 /*
-Afficher le dernier articles à l'endroit indiqué
+Afficher le dernier article à l'endroit indiqué
 */
-let ticket_last_article = document.getElementById('ticket-last-article');
 var last_article = {
     "title": "10 films à avoir vu dans sa vie",
     "description": "Liste de 10 films remarquables",
@@ -40,6 +39,7 @@ var last_article = {
     "author": "RomDos",
     "theme": "culture"
 };
+let ticket_last_article = document.getElementById('ticket-last-article');
 var title = last_article["title"];
 var link = last_article["link"];
 var description = last_article["description"];
