@@ -69,6 +69,30 @@ function select_articles_to_display(theme, last) {
                     #date_and_author {            
                         font-size: xx-small;  
                     }
+                    @media screen and (max-width: 1024px) {
+                        h1 {
+                            margin-left: 100px;
+                            margin-right:100px;
+                        }
+                        .article_data {
+                            margin-left: 150px;
+                            margin-right: 150px;
+                        }
+                    }
+                    @media screen and (max-width: 500px) {
+                        .section-intro {
+                            margin-left: -20px;
+                        }
+                        h1 {
+                            margin-left: 30px;
+                            margin-right:30px;
+                        }
+                        .article_data {
+                            margin-left: 40px;
+                            margin-right: 40px;
+                        }
+                    }
+
                 
                 </style>
                 <h1><a href="${link}">${article}</a></h1>
