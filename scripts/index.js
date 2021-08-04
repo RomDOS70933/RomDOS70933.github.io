@@ -6,21 +6,21 @@ let fr = document.getElementById('french');
 let en = document.getElementById('english');
 let es = document.getElementById('spanish');
 
-fr.addEventListener('click', function() {
+fr.addEventListener('click', function () {
     lng.innerHTML = "Je parle ";
     fr.innerHTML = "le français";
     en.innerHTML = "l'anglais";
     es.innerHTML = "l'espagnol";
 });
 
-en.addEventListener('click', function() {
+en.addEventListener('click', function () {
     lng.innerHTML = "I speak ";
     fr.innerHTML = "french";
     en.innerHTML = "english";
     es.innerHTML = "spanish";
 });
 
-es.addEventListener('click', function() {
+es.addEventListener('click', function () {
     lng.innerHTML = "Hablo el ";
     fr.innerHTML = "frances";
     en.innerHTML = "el ingles";
@@ -32,12 +32,12 @@ es.addEventListener('click', function() {
 Afficher le dernier article à l'endroit indiqué
 */
 var last_article = {
-    "title": "10 films à avoir vu dans sa vie",
-    "description": "Liste de 10 films remarquables",
-    "link": "articles/culture/my_ten_favorite_movies.html",
-    "date": "2021/04/02",
+    "title": "Fermentation 01: le pain",
+    "description": "Recettes et mécanismes de fermentation du pain",
+    "link": "articles/alimentation/fermentation01.html",
+    "date": "2021/08/04",
     "author": "RomDos",
-    "theme": "culture"
+    "theme": "alimentation"
 };
 let ticket_last_article = document.getElementById('ticket-last-article');
 var title = last_article["title"];

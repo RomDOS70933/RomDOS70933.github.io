@@ -13,12 +13,12 @@ var list_of_articles = {
         "author": "RomDos",
         "theme": "culture"
     },
-    "Fermentation 1: Le pain, recette simple": {
+    "Fermentation 01: le pain": {
         "description": "Recette et explications sur les mécanismes qui interviennent dans la préparation du pain",
-        "link": "../articles/cook/bread.html",
-        "date": "2021/04/02",
+        "link": "../articles/alimentation/fermentation01.html",
+        "date": "2021/08/04",
         "author": "RomDos",
-        "theme": "cook"
+        "theme": "alimentation"
     },
 }
 
@@ -100,7 +100,7 @@ function select_articles_to_display(theme, last) {
                 <p class="article_data" id="date_and_author">${date} - ${author}</p>
                 <hr>
                 `;
-        
+
             document.body.appendChild(template.content);
             shown_articles += 1;
         }
