@@ -49,13 +49,23 @@ h1 {
   font-size: large;
 }
 
+ol li {
+  margin-top: 10px;
+}
+
+#index {
+  font-style: italic;
+  list-style-type: none;
+  margin-top: 5px;
+}
+
 /*
 LINKS STYLE
 */
 
 a {
-  color: none;
-  text-decoration: none;
+  color: rgba(27, 32, 33, 1);
+  text-decoration: underline;  
 }
 
 a:link {
